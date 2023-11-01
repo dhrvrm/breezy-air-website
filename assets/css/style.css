@@ -117,7 +117,7 @@ main {
     margin-left: auto;
     background-color: rgb(243, 250, 254);
     clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
-    
+
     font-weight: 600;
 }
 
@@ -221,29 +221,29 @@ h2::before {
     left: 0;
     bottom: 0;
     height: 40%;
-    width: 110%;
+    width: 105%;
     line-height: 0px;
     background-color: #B0FFFD;
     z-index: -1;
 }
 
-.btn{
+.btn {
     padding: 0.8em 1.6em;
     background-color: #026B8B;
     color: #ffffff;
 }
 
-.btn_sm{
+.btn_sm {
     padding: 0.6em 1.2em;
     font-size: 1.4rem;
     margin-top: 4rem;
 }
 
-#sectors{ 
+#sectors {
     padding-block: 4rem;
 }
 
-.sectors_container{
+.sectors_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
@@ -252,16 +252,64 @@ h2::before {
     margin-top: 4rem;
 }
 
-.sector{
+.sector {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 300ms ease-in-out;
+}
+
+.sector:is(:hover, :focus) {
+    background-color: #ffff55;
+}
+
+.sectors_container img {
+    width: 4rem;
+}
+
+.products_container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(2,25rem);
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.sectors_container img{
-    width: 4rem;
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
 }
+
+
+.product img{
+    max-height: 100%;
+    aspect-ratio: 16/9;
+    object-fit: contain;
+}
+#vrv {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+#split, #one-way{
+    grid-column: 3/5;
+}
+
+#ductable, #two-way {
+    grid-column: 5/7;
+}
+
+#ahu, #four-way{
+    grid-column:7/9;
+}
+
+
 footer nav {}
