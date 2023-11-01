@@ -1,7 +1,7 @@
 /* Font */
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');  
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
 
 /* Reset */
 
@@ -78,8 +78,8 @@ html {
 }
 
 body {
-    background-color: #efffff;
-    color: #000;
+    background-color: #ffffff;
+    color: #002B39;
     font-size: 1.8rem;
     line-height: 1.5;
     font-weight: 400;
@@ -88,7 +88,7 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 img {
@@ -102,3 +102,166 @@ h1, h2, h3, h4, h5 {
 }
 
 /* End Basic */
+
+main {
+    padding-inline: 10rem;
+}
+
+.top_contact {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 4rem;
+    padding: 1.2rem 1.2rem 1.2rem 8rem;
+    max-width: max-content;
+    margin-left: auto;
+    background-color: rgb(243, 250, 254);
+    clip-path: polygon(8% 0, 100% 0%, 100% 100%, 0% 100%);
+    
+    font-weight: 600;
+}
+
+.contact_item img {
+    width: 1.8rem;
+    margin-right: 0.8rem;
+
+}
+
+header {
+    background-color: #fff;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    z-index: 999;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+#logo_container {
+    width: 20rem;
+}
+
+#menu {
+    display: flex;
+    gap: 4rem;
+    font-weight: 500;
+}
+
+#menu li a {
+    padding: 1.6rem;
+}
+
+#page_indicator {
+    position: relative;
+    line-height: 0px;
+
+}
+
+#page_indicator {
+    /* background: linear-gradient(to top, rgba(42, 42, 255, 0.514)), url('../media/hvac-1-banner.jpg'); */
+    background: url("../media/hvac-1-banner.jpg"), rgba(2, 0, 31, 0.8);
+    background-position: center center;
+    background-blend-mode: overlay;
+    height: 8rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+
+}
+
+
+#about {
+    padding: 4rem 0rem;
+}
+
+
+h1 {
+    text-align: left;
+    font-size: 3.6rem;
+    font-weight: 400;
+    font-family: 'Parisienne', cursive;
+    color: #fff;
+}
+
+#about_subheading {
+    font-family: 'Parisienne', cursive;
+}
+
+.about_container {
+    display: flex;
+    gap: 4rem;
+}
+
+
+.about_container p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #026B8B;
+    margin-bottom: 2rem;
+    position: relative;
+    display: block;
+    width: max-content;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 40%;
+    width: 110%;
+    line-height: 0px;
+    background-color: #B0FFFD;
+    z-index: -1;
+}
+
+.btn{
+    padding: 0.8em 1.6em;
+    background-color: #026B8B;
+    color: #ffffff;
+}
+
+.btn_sm{
+    padding: 0.6em 1.2em;
+    font-size: 1.4rem;
+    margin-top: 4rem;
+}
+
+#sectors{ 
+    padding-block: 4rem;
+}
+
+.sectors_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.sector{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sectors_container img{
+    width: 4rem;
+}
+footer nav {}
