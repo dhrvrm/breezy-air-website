@@ -120,6 +120,7 @@ main {
     clip-path: polygon(7% 0, 100% 0%, 100% 100%, 0% 100%);
 
     font-weight: 600;
+    margin-top: 2rem;
 }
 
 .top_contact a {
@@ -369,6 +370,8 @@ h3{
 .why_us{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+
 }
 
 .usp_container{
@@ -399,6 +402,28 @@ h3{
     margin-top: 2rem;
 }
 
+.quantity{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 4rem;
+    padding: 4rem 10rem 4rem 0rem;
+    background-blend-mode: color-dodge;
+
+
+    background-color: #026B8B;
+    clip-path: polygon(25% 0%, 100% 0, 100% 100%, 0% 100%);
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: right;
+}
+
+.quantity span:nth-child(2){
+    display: block;
+    font-size: 2.5rem;
+}
 
 .approach_container{
     margin-top: 6rem;
@@ -520,7 +545,13 @@ h3{
     margin-bottom: 0.8rem;
 }
 
+.swiper-button-next, .swiper-button-prev {
+    color: #026B8B;
+}
 
+.swiper-pagination-bullet-active {
+    background: #026B8B;
+}
 
 footer{
     padding: 8rem 6rem 0rem;
