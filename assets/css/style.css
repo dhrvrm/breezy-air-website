@@ -246,7 +246,7 @@ h3{
     padding: 0.8em 1.6em;
     background-color: #026B8B;
     color: #ffffff;
-    text-wrap: nowrap
+    text-wrap: nowrap;
 }
 
 .btn_sm {
@@ -255,8 +255,8 @@ h3{
     margin-top: 4rem;
 }
 
-#sectors, #values, #approach {
-    padding-block: 4rem;
+#sectors, #values, #approach, #clients {
+    padding-block: 8rem;
 }
 
 .sectors_container {
@@ -366,11 +366,19 @@ h3{
     font-size: 1.4rem;
 }
 
+.why_us{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 .usp_container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
+    grid-template-columns: 1fr;
+    
+}
+
+.usp_container ul li {
+    margin-top: 4rem;
 }
 
 .usp_container span{
@@ -380,14 +388,14 @@ h3{
 
 #usp .highlighted{
     /* font-size: 2.25rem; */
-    margin-block: 2rem;
+    margin-block: 2rem 0rem;
 }
 
 #usp .muted{
     font-size: 1.4rem;
     font-style: italic;
-    width: 50%;
-    max-width: max(60vh,60rem);
+    /* width: 50%; */
+    /* max-width: max(60vh,60rem); */
     margin-top: 2rem;
 }
 
@@ -446,4 +454,96 @@ h3{
 .step p{
     font-size: 1.4rem;
 }
-footer nav {}
+
+.clients_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.client{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1.6rem;
+    gap: 2rem;
+    justify-items: start;
+    border: 4px solid #026b8b1e;
+    transition: all 300ms ease-in-out;
+}
+
+.client:hover{
+    border: 4px solid #026b8b53;
+}
+
+.client_desciption{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.client_name{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #026B8B;
+}
+
+.client_location{
+    display: flex;
+    gap: 0.8rem;
+    justify-content: start;
+    width: max-content;
+    text-wrap: nowrap;
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem;
+    background-color: #FAFFCD;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    border: 1px solid rgb(255, 241, 47);
+
+
+}
+
+.client_location:hover{
+    border-radius: 2rem;
+    border: 1px solid greenyellow;
+}
+.client_work{
+    font-weight: 600;
+    font-size: 2rem;
+
+}
+.client_work img{
+    height: 1.5rem;
+    object-fit: contain;
+    width: max-content;
+    margin-bottom: 0.8rem;
+}
+
+
+
+footer{
+    padding: 8rem 6rem 0rem;
+    background-color: #f8ffff;
+}
+footer nav {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-around;
+
+}
+
+footer nav ul li {
+    margin-bottom: 2rem;
+    opacity: 0.7;
+}
+
+footer nav ul li:hover{
+    opacity: 1;
+}
+
+.copyright{
+    background-color: rgb(244, 244, 244);
+    padding: 3rem 0rem;
+    text-align: center;
+}
