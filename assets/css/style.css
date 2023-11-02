@@ -248,6 +248,14 @@ h3{
     background-color: #026B8B;
     color: #ffffff;
     text-wrap: nowrap;
+    transition: border-radius 50ms ease-in-out;
+    transition: border-radius 300ms ease-in-out;
+}
+
+.btn:hover{
+    border-radius: 2em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
 }
 
 .btn_sm {
@@ -482,33 +490,36 @@ h3{
 
 .clients_container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(4,1fr);
     gap: 4rem;
     margin-top: 4rem;
 }
 
 .client{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 1.6rem;
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     justify-items: start;
-    border: 4px solid #026b8b1e;
+    /* border: 4px solid #026b8b1e; */
     transition: all 300ms ease-in-out;
 }
 
 .client:hover{
-    border: 4px solid #026b8b53;
+    /* border: 4px solid #026b8b53; */
 }
 
 .client_desciption{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
+    gap: 1rem;
+    padding-top: 1.6rem;
+
 }
 
 .client_name{
-    font-size: 3rem;
+    min-height: 7rem;
+    font-size: 2.5rem;
     font-weight: 700;
     color: #026B8B;
 }
@@ -516,10 +527,11 @@ h3{
 .client_location{
     display: flex;
     gap: 0.8rem;
-    justify-content: start;
+    justify-content: center;
+    align-items: center;
     width: max-content;
     text-wrap: nowrap;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding: 0.5rem 1rem;
     background-color: #FAFFCD;
     cursor: pointer;
