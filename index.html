@@ -9,32 +9,49 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script src="./assets/js/main.js" defer></script>
   </head>
   <body>
     <main>
       <header>
         <div class="top_contact">
           <div class="contact_item">
-            <img src="./assets/media/call.svg" alt="phone icon" />
+            <img
+              src="./assets/media/call.svg"
+              alt="phone icon"
+              loading="lazy"
+            />
             <a href="tel:919718272445">+91-9718-272-445</a>
           </div>
           <div class="contact_item">
-            <img src="./assets/media/mail.svg" alt="mail icon" />
+            <img src="./assets/media/mail.svg" alt="mail icon" loading="lazy" />
             <a href="mailto:breezyair90@gmail.com">breezyair90@gmail.com</a>
           </div>
         </div>
         <nav>
           <ul id="logo_container">
-            <li><img src="./assets/media/logo.png" alt="Breezy Air Logo" /></li>
+            <li>
+              <img
+                src="./assets/media/logo.png"
+                alt="Breezy Air Logo"
+                loading="eager"
+              />
+            </li>
           </ul>
-          <ul id="menu">
-            <li><a href="">Home</a></li>
-            <li><a href="">About Us </a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">Clients</a></li>
-            <li><a href="">VRV</a></li>
-            <li><a href="">Contact Us</a></li>
-          </ul>
+          <div class="menu_items">
+            <div class="menu_btn">
+              <img src="./assets/media/dropdown.svg" alt="dropdown">
+            </div>
+            <ul id="menu" >
+              <li><a href="">Home</a></li>
+              <li><a href="./about.html">About Us </a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./clients.html">Clients</a></li>
+              <li><a href="./our-work.html">Our Work</a></li>
+              <li><a href="./contact-us.html">Contact Us</a></li>
+            </ul>
+          </div>
           <ul>
             <li>
               <a href="./contact.html" class="btn">Free Consultation</a>
@@ -51,6 +68,7 @@
             <img
               src="./assets/media/building-breezy.jpg"
               alt="Breezy Air around Building"
+              loading="eager"
             />
           </div>
           <div class="about_text">
@@ -58,9 +76,9 @@
             <p>
               Breezy Air is a new generation HVAC installation & commissioning
               company founded by an educated and energetic youth with more than
-              10+ years of experience in all aspects of the HVAC industry. We are
-              located in the heart of NCR and are dedicated to performing at the
-              highest esteem.
+              10+ years of experience in all aspects of the HVAC industry. We
+              are located in the heart of NCR and are dedicated to performing at
+              the highest esteem.
             </p>
             <p>
               We focus on making air conditioning and ventilation systems
@@ -80,26 +98,39 @@
         <h2>We work in various sectors</h2>
         <div class="sectors_container">
           <div class="sector">
-            <img src="./assets/media/utensils.svg" alt="Restaurant" />
+            <img
+              src="./assets/media/utensils.svg"
+              alt="Restaurant"
+              loading="lazy"
+            />
             <h3>Restaurants</h3>
           </div>
           <div class="sector">
-            <img src="./assets/media/hospital.svg" alt="Hospitals" />
+            <img
+              src="./assets/media/hospital.svg"
+              alt="Hospitals"
+              loading="lazy"
+            />
             <h3>Hospitals</h3>
           </div>
 
           <div class="sector">
-            <img src="./assets/media/gym.svg" alt="Gym" />
+            <img src="./assets/media/gym.svg" alt="Gym" loading="lazy" />
             <h3>Gyms</h3>
           </div>
           <div class="sector">
-            <img src="./assets/media/store.svg" alt="Stores/ Malls" />
+            <img
+              src="./assets/media/store.svg"
+              alt="Stores/ Malls"
+              loading="lazy"
+            />
             <h3>Stores/ Malls</h3>
           </div>
           <div class="sector">
             <img
               src="./assets/media/landmark-flag.svg"
               alt="Government Buildings"
+              loading="lazy"
             />
             <h3>Government Buildings</h3>
           </div>
@@ -107,15 +138,24 @@
             <img
               src="./assets/media/office.svg"
               alt="Corporate/ Office Complex"
+              loading="lazy"
             />
             <h3>Corporate/ Office Complex</h3>
           </div>
           <div class="sector">
-            <img src="./assets/media/industry.svg" alt="Industries/Factories" />
+            <img
+              src="./assets/media/industry.svg"
+              alt="Industries/Factories"
+              loading="lazy"
+            />
             <h3>Industries/Factories</h3>
           </div>
           <div class="sector">
-            <img src="./assets/media/house.svg" alt="Residential/ Housing" />
+            <img
+              src="./assets/media/house.svg"
+              alt="Residential/ Housing"
+              loading="lazy"
+            />
             <h3>Residential/ Housing</h3>
           </div>
         </div>
@@ -124,32 +164,60 @@
         <h2>Our Products</h2>
         <div class="products_container">
           <div class="product" id="vrv">
-            <img src="./assets/media/products/vrv.png" alt="" />
+            <img
+              src="./assets/media/products/vrv.png"
+              alt="VRV Air Conditioning"
+              loading="lazy"
+            />
             <h3>VRV Air Conditioning</h3>
           </div>
           <div class="product" id="split">
-            <img src="./assets/media/products/split.png" alt="" />
+            <img
+              src="./assets/media/products/split.png"
+              alt="Split Air Conditioning"
+              loading="lazy"
+            />
             <h3>Split Air Conditioning</h3>
           </div>
           <div class="product" id="ductable">
-            <img src="./assets/media/products/ductable.png" alt="" />
+            <img
+              src="./assets/media/products/ductable.png"
+              alt="Non-VRV Ductable"
+              loading="lazy"
+            />
             <h3>Non-VRV Ductable</h3>
           </div>
           <div class="product" id="ahu">
-            <img src="./assets/media/products/ahu.png" alt="" />
+            <img
+              src="./assets/media/products/ahu.png"
+              alt="Air Handling Unit"
+              loading="lazy"
+            />
             <h3>Air Handling Unit</h3>
           </div>
           <div class="product" id="one-way">
-            <img src="./assets/media/products/one-way.png" alt="" />
-            <h3>VRV Air Conditioning</h3>
+            <img
+              src="./assets/media/products/one-way.png"
+              alt="1 Way Cassette AC"
+              loading="lazy"
+            />
+            <h3>1 Way Cassette AC</h3>
           </div>
           <div class="product" id="two-way">
-            <img src="./assets/media/products/two-way.png" alt="" />
-            <h3>VRV Air Conditioning</h3>
+            <img
+              src="./assets/media/products/two-way.png"
+              alt="2 Way Cassette AC"
+              loading="lazy"
+            />
+            <h3>2 Way Cassette AC</h3>
           </div>
           <div class="product" id="four-way">
-            <img src="./assets/media/products/four-way.png" alt="" />
-            <h3>VRV Air Conditioning</h3>
+            <img
+              src="./assets/media/products/four-way.png"
+              alt="4 Way Cassette AC"
+              loading="lazy"
+            />
+            <h3>4 Way Cassette AC</h3>
           </div>
         </div>
       </section>
@@ -162,7 +230,11 @@
             <div class="step">
               <span class="step_count">1</span>
 
-              <img src="./assets/media/steps/layout.jpeg" alt="" />
+              <img
+                src="./assets/media/steps/layout.jpeg"
+                alt="Drawing/ layout"
+                loading="lazy"
+              />
               <h3>Drawing/ layout</h3>
               <p>
                 The client shares drawings and layouts of the project. Our team
@@ -173,7 +245,11 @@
             <div class="step">
               <span class="step_count">2</span>
 
-              <img src="./assets/media/steps/designing.jpeg" alt="" />
+              <img
+                src="./assets/media/steps/designing.jpeg"
+                alt="Design and planning"
+                loading="lazy"
+              />
               <h3>Design and planning</h3>
               <p>
                 Once we have a good understanding of the project, we begin
@@ -184,7 +260,11 @@
             <div class="step">
               <span class="step_count">3</span>
 
-              <img src="./assets/media/steps/procurement.jpeg" alt="" />
+              <img
+                src="./assets/media/steps/procurement.jpeg"
+                alt="Procurement"
+                loading="lazy"
+              />
               <h3>Procurement</h3>
               <p>
                 Once the drawings are approved, we procure the necessary
@@ -194,7 +274,11 @@
             <div class="step">
               <span class="step_count">4</span>
 
-              <img src="./assets/media/steps/execution.jpeg" alt="" />
+              <img
+                src="./assets/media/steps/execution.jpeg"
+                alt="Execution"
+                loading="lazy"
+              />
               <h3>Execution</h3>
               <p>
                 Our team of engineers executes the fittings according to the
@@ -207,69 +291,62 @@
       <section id="usp">
         <h2>Why Choose Us ?</h2>
         <div class="why_us">
+          <div class="usp_container">
+            <p class="highlighted">
+              Why choose Breezy Air for HVAC (Heating, Ventilation, and Air
+              Conditioning) consulting services in India?
+            </p>
+            <ul>
+              <li>
+                <span>Expertise and experience:</span> Our team of experienced
+                HVAC engineers and designers has a deep understanding of the
+                latest HVAC technologies and trends. We have a proven track
+                record of success in delivering innovative and sustainable HVAC
+                solutions for a wide range of clients.
+              </li>
+              <li>
+                <span>Local knowledge:</span> We are a local company with a deep
+                understanding of the Indian HVAC market. We understand the
+                unique challenges and opportunities that Indian businesses face,
+                and we can tailor our solutions accordingly.
+              </li>
+              <li>
+                <span>Innovative solutions:</span> We are constantly looking for
+                new and innovative ways to improve the energy efficiency and
+                comfort of our clients' buildings. We are not afraid to
+                challenge the status quo and develop new solutions that meet the
+                specific needs of our clients.
+              </li>
+              <li>
+                <span>Quality assurance:</span> We are committed to providing
+                our clients with the highest quality HVAC consulting services.
+                We have a rigorous quality assurance process in place to ensure
+                that all of our work meets our high standards.
+              </li>
+            </ul>
 
-        <div class="usp_container">
-
-          <p class="highlighted">
-            Why choose Breezy Air for HVAC (Heating, Ventilation, and Air
-            Conditioning) consulting services in India?
-          </p>
-        <ul>
-          
-          <li>
-            <span>Expertise and experience:</span> Our team of experienced HVAC
-            engineers and designers has a deep understanding of the latest HVAC
-            technologies and trends. We have a proven track record of success in
-            delivering innovative and sustainable HVAC solutions for a wide
-            range of clients.
-          </li>
-          <li>
-            <span>Local knowledge:</span> We are a local company with a deep
-            understanding of the Indian HVAC market. We understand the unique
-            challenges and opportunities that Indian businesses face, and we can
-            tailor our solutions accordingly.
-          </li>
-          <li>
-            <span>Innovative solutions:</span> We are constantly looking for new
-            and innovative ways to improve the energy efficiency and comfort of
-            our clients' buildings. We are not afraid to challenge the status
-            quo and develop new solutions that meet the specific needs of our
-            clients.
-          </li>
-          <li>
-            <span>Quality assurance:</span> We are committed to providing our
-            clients with the highest quality HVAC consulting services. We have a
-            rigorous quality assurance process in place to ensure that all of
-            our work meets our high standards.
-          </li>
-        </ul>
-
-        <p class="muted">
-          We believe that these four key factors make Breezy Air the ideal
-          choice for HVAC consulting services in India. We are here to help our
-          clients achieve their HVAC goals and create a more comfortable and
-          sustainable environment for their businesses.
-        </p>
-      </div>
-      <div class="quantity">
-        
-        <h3>
-          <span>10+ Years</span> 
-          <span>of experience</span>
-        </h3>
-        <h3>
-          <span>5000 HP</span> 
-          <span>VRV Installed</span>
-        </h3>
-        <h3>
-          <span>1000 Ton</span> 
-          <span>Non-VRV Installed</span>
-        </h3>
-
-      </div>
-        
-      </div>
-
+            <p class="muted">
+              We believe that these four key factors make Breezy Air the ideal
+              choice for HVAC consulting services in India. We are here to help
+              our clients achieve their HVAC goals and create a more comfortable
+              and sustainable environment for their businesses.
+            </p>
+          </div>
+          <div class="quantity">
+            <h3>
+              <span>10+ Years</span>
+              <span>of experience</span>
+            </h3>
+            <h3>
+              <span>5000 HP</span>
+              <span>VRV Installed</span>
+            </h3>
+            <h3>
+              <span>1000 Ton</span>
+              <span>Non-VRV Installed</span>
+            </h3>
+          </div>
+        </div>
       </section>
       <section id="values">
         <h2>Our Values</h2>
@@ -279,6 +356,7 @@
               src="./assets/media/experience.svg"
               alt="Experience"
               srcset=""
+              loading="lazy"
             />
             <h3>Experience</h3>
             <p>
@@ -289,7 +367,11 @@
             </p>
           </div>
           <div class="value">
-            <img src="./assets/media/expertise.svg" alt="Expertise" />
+            <img
+              src="./assets/media/expertise.svg"
+              alt="Expertise"
+              loading="lazy"
+            />
             <h3>Expertise</h3>
             <p>
               We are experts in all aspects of HVAC design, from load
@@ -299,7 +381,11 @@
             </p>
           </div>
           <div class="value">
-            <img src="./assets/media/enthusiastic.svg" alt="Enthusiasm" />
+            <img
+              src="./assets/media/enthusiastic.svg"
+              alt="Enthusiasm"
+              loading="lazy"
+            />
             <h3>Enthusiasm</h3>
             <p>
               Honesty and enthusiasm differentiate us from others. Our team is
@@ -317,12 +403,21 @@
         <div class="clients_container">
           <div class="client">
             <div class="client_desciption">
-              <a href="https://maps.app.goo.gl/BeahpiqeKnnA2GM37" target="_blank" class="client_location">
-                <img src="./assets/media/location.svg" alt="Pin icon" />
+              <a
+                href="https://maps.app.goo.gl/BeahpiqeKnnA2GM37"
+                target="_blank"
+                class="client_location"
+              >
+                <img
+                  src="./assets/media/location.svg"
+                  alt="Pin icon"
+                  loading="lazy"
+                  loading="lazy"
+                />
                 <h4>Karol Bagh, Delhi</h4>
               </a>
               <h3 class="client_name">Bloom Hotel</h3>
-              
+
               <!-- <div class="client_work">
                 <img
                   src="./assets/media/hitachi.png"
@@ -337,30 +432,37 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/bloom-1.webp"
+                      alt="Bloom Hotel, Karol Bagh"
+                      loading="lazy"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/bloom-2.webp"
+                      alt="Bloom Hotel, Karol Bagh"
+                      loading="lazy"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/bloom-3.webp"
+                      alt="Bloom Hotel, Karol Bagh"
+                      loading="lazy"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/bloom-4.webp"
+                      alt="Bloom Hotel, Karol Bagh"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="./assets/media/clients/bloom-5.webp"
+                      alt="Bloom Hotel, Karol Bagh"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -372,14 +474,20 @@
           </div>
           <div class="client">
             <div class="client_desciption">
-              <a href="https://maps.app.goo.gl/XpzX5iDhrhxo6axy8" target="_blank" class="client_location">
-                <img src="./assets/media/location.svg" alt="Pin icon" />
+              <a
+                href="https://maps.app.goo.gl/XpzX5iDhrhxo6axy8"
+                target="_blank"
+                class="client_location"
+              >
+                <img
+                  src="./assets/media/location.svg"
+                  alt="Pin icon"
+                  loading="lazy"
+                />
                 <h4>Nangloi, Delhi</h4>
               </a>
-              <h3 class="client_name">Dragon Fitness
-                Luxury Gym
-              </h3>
-              
+              <h3 class="client_name">Dragon Fitness Luxury Gym</h3>
+
               <!-- <div class="client_work">
                 <img
                   src="./assets/media/daikin.png"
@@ -394,32 +502,26 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/dragon-1.webp"
+                      alt="Dragon Fitness Gym, Nangloi"
+                      loading="lazy"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/dragon-2.webp"
+                      alt="Dragon Fitness Gym, Nangloi"
+                      loading="lazy"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/dragon-3.webp"
+                      alt="Dragon Fitness Gym, Nangloi"
+                      loading="lazy"
                     />
                   </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
-                    />
-                  </div>
+    
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -429,14 +531,20 @@
           </div>
           <div class="client">
             <div class="client_desciption">
-              <a href="https://maps.app.goo.gl/c5N8ZX1EuavM1Bn27" target="_blank" class="client_location">
-                <img src="./assets/media/location.svg" alt="Pin icon" />
+              <a
+                href="https://maps.app.goo.gl/c5N8ZX1EuavM1Bn27"
+                target="_blank"
+                class="client_location"
+              >
+                <img
+                  src="./assets/media/location.svg"
+                  alt="Pin icon"
+                  loading="lazy"
+                />
                 <h4>Sarojini Nagar, Delhi</h4>
               </a>
-              <h3 class="client_name">Ministry Of
-                Defence
-              </h3>
-              
+              <h3 class="client_name">Ministry Of Defence</h3>
+
               <!-- <div class="client_work">
                 <img
                   src="./assets/media/daikin.png"
@@ -451,32 +559,19 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/defence-1.webp"
+                      alt="Ministry Location"
+                      loading="lazy"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/defence-2.webp"
+                      alt="Ministry Location"
+                      loading="lazy"
                     />
                   </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
-                    />
-                  </div>
+                  
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -486,13 +581,20 @@
           </div>
           <div class="client">
             <div class="client_desciption">
-              <a href="https://maps.app.goo.gl/bAhi4sErRGAG9ioM8" target="_blank" class="client_location">
-                <img src="./assets/media/location.svg" alt="Pin icon" />
+              <a
+                href="https://maps.app.goo.gl/bAhi4sErRGAG9ioM8"
+                target="_blank"
+                class="client_location"
+              >
+                <img
+                  src="./assets/media/location.svg"
+                  alt="Pin icon"
+                  loading="lazy"
+                />
                 <h4>Vasant Kunj, Delhi</h4>
               </a>
-              <h3 class="client_name">Pllatos Air Bar
-              </h3>
-              
+              <h3 class="client_name">Pllatos Air Bar</h3>
+
               <!-- <div class="client_work">
                 <img
                   src="./assets/media/daikin.png"
@@ -507,32 +609,33 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/pllatos-1.webp"
+                      alt="Pllatos Air Bar"
+                      loading="lazy"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/pllatos-2.webp"
+                      alt="Pllatos Air Bar"
+                      loading="lazy"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/pllatos-3.webp"
+                      alt="Pllatos Air Bar"
+                      loading="lazy"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/pllatos-4.webp"
+                      alt="Pllatos Air Bar"
+                      loading="lazy"
                     />
                   </div>
+                  
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -542,13 +645,20 @@
           </div>
           <div class="client">
             <div class="client_desciption">
-              <a href="https://maps.app.goo.gl/QP2B6cV4GqfrRvpc8" target="_blank" class="client_location">
-                <img src="./assets/media/location.svg" alt="Pin icon" />
+              <a
+                href="https://maps.app.goo.gl/QP2B6cV4GqfrRvpc8"
+                target="_blank"
+                class="client_location"
+              >
+                <img
+                  src="./assets/media/location.svg"
+                  alt="Pin icon"
+                  loading="lazy"
+                />
                 <h4>Vasant Vihar, Delhi</h4>
               </a>
-              <h3 class="client_name">ISAAC LUXE
-              </h3>
-              
+              <h3 class="client_name">ISAAC LUXE</h3>
+
               <!-- <div class="client_work">
                 <img
                   src="./assets/media/daikin.png"
@@ -563,30 +673,23 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/issac-1.webp"
+                      alt="ISSAC Luxe, Vasant Vihar"
+                      loading="lazy"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/issac-2.webp"
+                      alt="ISSAC Luxe, Vasant Vihar"
+                      loading="lazy"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/issac-3.webp"
+                      alt="ISSAC Luxe, Vasant Vihar"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -598,14 +701,20 @@
           </div>
           <div class="client">
             <div class="client_desciption">
-              <a href="https://maps.app.goo.gl/feYwrpEAXrwy2yWn8" target="_blank" class="client_location">
-                <img src="./assets/media/location.svg" alt="Pin icon" />
+              <a
+                href="https://maps.app.goo.gl/feYwrpEAXrwy2yWn8"
+                target="_blank"
+                class="client_location"
+              >
+                <img
+                  src="./assets/media/location.svg"
+                  alt="Pin icon"
+                  loading="lazy"
+                />
                 <h4>Greater Kailash, Delhi</h4>
               </a>
-              <h3 class="client_name">Derma Miracle
-                Skin Specialist
-              </h3>
-              
+              <h3 class="client_name">Derma Miracle Skin Specialist</h3>
+
               <!-- <div class="client_work">
                 <img
                   src="./assets/media/daikin.png"
@@ -620,32 +729,26 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/miracle-1.webp"
+                      alt="Derma Miracle, Greater Kailash"
+                      loading="lazy"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/miracle-2.webp"
+                      alt="Derma Miracle, Greater Kailash"
+                      loading="lazy"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/miracle-3.webp"
+                      alt="Derma Miracle, Greater Kailash"
+                      loading="lazy"
                     />
                   </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
-                    />
-                  </div>
+                  
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -655,13 +758,20 @@
           </div>
           <div class="client">
             <div class="client_desciption">
-              <a href="https://maps.app.goo.gl/L1UF4SPnvJ1dgVKk9" target="_blank" class="client_location">
-                <img src="./assets/media/location.svg" alt="Pin icon" />
+              <a
+                href="https://maps.app.goo.gl/L1UF4SPnvJ1dgVKk9"
+                target="_blank"
+                class="client_location"
+              >
+                <img
+                  src="./assets/media/location.svg"
+                  alt="Pin icon"
+                  loading="lazy"
+                />
                 <h4>Aadarsh Nagar, Delhi</h4>
               </a>
-              <h3 class="client_name">Save Sight Center Eye Hospital 
-              </h3>
-              
+              <h3 class="client_name">Save Sight Center Eye Hospital</h3>
+
               <!-- <div class="client_work">
                 <img
                   src="./assets/media/daikin.png"
@@ -676,32 +786,26 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/sight-1.webp"
+                      alt="Save Sight Center, Adarsh Nagar"
+                      loading="lazy"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/sight-2.webp"
+                      alt="Save Sight Center, Adarsh Nagar"
+                      loading="lazy"
                     />
                   </div>
                   <div class="swiper-slide">
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/sight-3.webp"
+                      alt="Save Sight Center, Adarsh Nagar"
+                      loading="lazy"
                     />
                   </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
-                    />
-                  </div>
+
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
@@ -711,13 +815,20 @@
           </div>
           <div class="client">
             <div class="client_desciption">
-              <a href="https://maps.app.goo.gl/Ek47nspJqzw7qWLJ9" target="_blank" class="client_location">
-                <img src="./assets/media/location.svg" alt="Pin icon" />
+              <a
+                href="https://maps.app.goo.gl/Ek47nspJqzw7qWLJ9"
+                target="_blank"
+                class="client_location"
+              >
+                <img
+                  src="./assets/media/location.svg"
+                  alt="Pin icon"
+                  loading="lazy"
+                />
                 <h4>Pahargunj, Delhi</h4>
               </a>
-              <h3 class="client_name">The Royal Imperial Feast
-              </h3>
-              
+              <h3 class="client_name">The Royal Imperial Feast</h3>
+
               <!-- <div class="client_work">
                 <img
                   src="./assets/media/daikin.png"
@@ -730,32 +841,25 @@
               <!-- Swiper -->
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" >
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/royal-1.webp"
+                      alt="The Royal Imperial Feast, Pahargunj"
+                      loading="lazy"
                     />
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" >
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/royal-2.webp"
+                      alt="The Royal Imperial Feast, Pahargunj"
+                      loading="lazy"
                     />
                   </div>
-                  <div class="swiper-slide">
+                  <div class="swiper-slide" >
                     <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
-                    />
-                  </div>
-                  <div class="swiper-slide">
-                    <img
-                      src="./assets/media/clients/bloom-1.png"
-                      alt=""
-                      srcset=""
+                      src="./assets/media/clients/royal-3.webp"
+                      alt="The Royal Imperial Feast, Pahargunj"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -765,18 +869,89 @@
               </div>
             </div>
           </div>
-          
+        </div>
+
+        <div class="testimonials_container">
+          <h2>Testimonials</h2>
+          <div class="testimonials">
+            <!-- Swiper -->
+            <div class="swiper testimonial-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <p>
+                      We are very pleased with the comprehensive HVAC consulting
+                      services provided by Breezy Air. Their team of engineers
+                      and designers worked closely with us to understand our
+                      specific needs and develop a solution that met our budget
+                      and sustainability goals. The installation process was
+                      smooth and efficient, and the team was always available to
+                      answer our questions and address any concerns we had. We
+                      are confident that our new HVAC system will help us to
+                      provide our patients with a comfortable and healthy
+                      environment.
+                    </p>
+                    <h3 class="testimonial_by">
+                      Dr. Jain, Save Sight Hospital
+                    </h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <p>
+                      We are very pleased with the comprehensive HVAC consulting
+                      services provided by Breezy Air. Their team of engineers
+                      and designers worked closely with us to understand our
+                      specific needs and develop a solution that met our budget
+                      and sustainability goals. The installation process was
+                      smooth and efficient, and the team was always available to
+                      answer our questions and address any concerns we had. We
+                      are confident that our new HVAC system will help us to
+                      provide our patients with a comfortable and healthy
+                      environment.
+                    </p>
+                    <h3 class="testimonial_by">
+                      Dr. Jain, Save Sight Hospital
+                    </h3>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonial">
+                    <p>
+                      We are very pleased with the comprehensive HVAC consulting
+                      services provided by Breezy Air. Their team of engineers
+                      and designers worked closely with us to understand our
+                      specific needs and develop a solution that met our budget
+                      and sustainability goals. The installation process was
+                      smooth and efficient, and the team was always available to
+                      answer our questions and address any concerns we had. We
+                      are confident that our new HVAC system will help us to
+                      provide our patients with a comfortable and healthy
+                      environment.
+                    </p>
+                    <h3 class="testimonial_by">
+                      Dr. Jain, Save Sight Hospital
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
         </div>
       </section>
       <footer>
         <nav>
           <ul>
             <li><h2>Useful Links</h2></li>
-            <li><a href="">About Us </a></li>
-            <li><a href="">Products</a></li>
-            <li><a href="">Clients</a></li>
-            <li><a href="">VRV</a></li>
-            <li><a href="">Contact Us</a></li>
+            <li><a href="">Home</a></li>
+              <li><a href="./about.html">About Us </a></li>
+              <li><a href="./products.html">Products</a></li>
+              <li><a href="./clients.html">Clients</a></li>
+              <li><a href="./our-work.html">Our Work</a></li>
+              <li><a href="./contact-us.html">Contact Us</a></li>
           </ul>
           <ul>
             <li><h2>Get in Touch</h2></li>
@@ -812,7 +987,7 @@
           </ul>
           <address>
             <h2>Regd. Office:</h2>
-            <h3>GH-6/148, Paschim Vihar, New Delhi, Delhi 110087</h3>
+            <!-- <h3>GH-6/148, Paschim Vihar, New Delhi, Delhi 110087</h3> -->
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.980896092091!2d77.0833245753821!3d28.66029067564963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0255c9905a7d%3A0x6a5528012c8bdcf!2sBreezy%20Air!5e0!3m2!1sen!2sin!4v1698897342919!5m2!1sen!2sin"
               width="400"
@@ -852,6 +1027,21 @@
           dynamicBullets: true,
         },
         loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      var swiper2 = new Swiper(".testimonial-swiper", {
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
