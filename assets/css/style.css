@@ -170,7 +170,16 @@ header nav {
 #menu li a {
     padding: 1.6rem;
     text-wrap: nowrap;
+    opacity: 0.7;
 
+}
+
+#menu li a:hover {
+    opacity: 1;
+}
+
+#menu li .active_item {
+    opacity: 1;
 }
 
 #page_indicator {
@@ -178,6 +187,8 @@ header nav {
     line-height: 0px;
 
 }
+
+
 
 #page_indicator {
     /* background: linear-gradient(to top, rgba(42, 42, 255, 0.514)), url('../media/hvac-1-banner.jpg'); */
@@ -195,6 +206,10 @@ header nav {
 
 #about {
     padding: 4rem 0rem;
+}
+
+.about_extra {
+    margin-top: 4rem;
 }
 
 
@@ -254,12 +269,12 @@ h3 {
     text-wrap: nowrap;
     transition: border-radius 50ms ease-in-out;
     transition: border-radius 300ms ease-in-out;
+    cursor: pointer;
 }
 
 .btn:hover {
     border-radius: 2em;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-
 }
 
 .btn_sm {
@@ -268,7 +283,7 @@ h3 {
     margin-top: 4rem;
 }
 
-#sectors, #values, #approach, #clients, #usp {
+#sectors, #values, #approach, #products, #clients, #usp, #mission_vision, #contact, #work {
     padding-block: 8rem;
 }
 
@@ -639,6 +654,117 @@ footer nav ul li:hover {
     text-align: center;
 }
 
+#contact {
+    display: flex;
+    gap: 6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contact_form {
+    display: flex;
+    width: max-content;
+    padding: 4rem 8rem;
+    background-color: #F8F8F8;
+    flex-direction: column;
+    gap: 1.6rem;
+    justify-self: center;
+}
+
+
+#contact_form h3 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#contact_form p {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.field_group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.field_group label {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: inherit;
+}
+
+.field_group input, .field_group textarea, .field_group select, option {
+    font-family: inherit;
+    font-weight: 600;
+    max-width: 40rem;
+    min-width: 25rem;
+    padding: 1rem 0.8rem;
+    border: none;
+    border-radius: 4px;
+    border-left: 4px solid #010619;
+}
+
+.error_message {
+    display: none;
+    padding: 1rem 2rem;
+    background-color: crimson;
+    color: #FFFFFF;
+    font-size: 1.4rem;
+    width: max-content;
+}
+
+.contact_information a, .contact_information address {
+    margin-bottom: 4rem;
+}
+
+#mission_vision {
+    display: flex;
+    gap: 6rem;
+    /* padding: 2rem; */
+}
+
+.work_container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 2rem;
+}
+
+.work_container img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    height: 100%;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.work_container img:hover {
+    transform: scale(1.04);
+}
+
+.work_container img:is(:nth-child(1), :nth-child(3), :nth-child(5), :nth-child(7)) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+#cta {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: start;
+    align-items: start;
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: rgba(1, 1, 82, 0.25) 0px 10px 10px -10px inset, rgba(2, 33, 59, 0.3) 0px 18px 36px -18px inset;
+    transition: all 300ms ease-in-out;
+}
+
+#cta:hover {
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+
 @media screen and (max-width: 1180px) {
     main {
         padding-inline: 2rem;
@@ -737,8 +863,6 @@ footer nav ul li:hover {
         0% {
             opacity: 0.65;
             transform: translateY(-2rem);
-
-
         }
 
         70% {
@@ -766,7 +890,7 @@ footer nav ul li:hover {
         flex-direction: column;
     }
 
-    #about, #sectors, #values, #approach, #clients, #usp {
+    #about, #sectors, #values, #approach, #products, #clients, #usp, #mission_vision, #contact, #work {
         padding-block: 4rem;
         padding-inline: 2rem;
     }
@@ -805,7 +929,7 @@ footer nav ul li:hover {
         margin-top: 4rem;
     }
 
-    .client:not(:last-child){
+    .client:not(:last-child) {
         border-bottom: 2px solid #f3fdd0;
         border-bottom-width: 4rem;
     }
@@ -854,5 +978,35 @@ footer nav ul li:hover {
         grid-column: 3/8;
     }
 
+    #mission_vision {
+        flex-direction: column;
+    }
 
+    #cta {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        align-items: center;
+        padding: 4rem 2rem;
+        margin-bottom: 2rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+
+    #cta h2 {
+        max-width: 80%;
+        font-size: 1.6rem;
+    }
+
+    .work_container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        gap: 2rem;
+    }
+
+    .work_container img {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
 }
