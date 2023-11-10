@@ -13,7 +13,7 @@ function toggle(){
 
 
 
-
+try{
 document.querySelector("#form_button").addEventListener("click", (e) => {
     e.preventDefault();
     document.querySelector(".error_message").style.display = "none";
@@ -46,6 +46,10 @@ document.querySelector("#form_button").addEventListener("click", (e) => {
     form.submit();
     form.reset();
   });
+}
+catch(e){
+    //Do nothing
+}
   
   function validateName(name) {
     if (name === "") {
